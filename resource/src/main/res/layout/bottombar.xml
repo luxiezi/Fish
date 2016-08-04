@@ -16,34 +16,34 @@
             android:button="@null"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/main"/>
+            android:background="@drawable/main_selector" />
         <RadioButton
             android:id="@+id/search_rb_fragment"
             android:layout_weight="1"
             android:button="@null"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableTop="@drawable/search_btn_normal"/>
+            android:background="@drawable/search_selector"/>
         <RadioButton
             android:id="@+id/dolla_rb_fragment"
             android:layout_weight="1"
             android:button="@null"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableTop="@drawable/dolla"/>
+            android:background="@drawable/dolla_selector"/>
         <RadioButton
             android:id="@+id/car_rb_fragment"
             android:layout_weight="1"
             android:button="@null"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableTop="@drawable/car"/>
+            android:background="@drawable/car_selector"/>
         <RadioButton
             android:id="@+id/me_rb_fragment"
             android:layout_weight="1"
             android:button="@null"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableTop="@drawable/me"/>
+            android:background="@drawable/me_selector"/>
     </RadioGroup>
 </LinearLayout>
