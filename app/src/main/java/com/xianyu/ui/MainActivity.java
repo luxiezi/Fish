@@ -1,4 +1,4 @@
-package com.fish;
+package com.xianyu.ui;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -7,11 +7,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
-import com.fish.fragment.Car_fragment;
-import com.fish.fragment.Dolla_fragment;
-import com.fish.fragment.Main_fragment;
-import com.fish.fragment.Me_fragment;
-import com.fish.fragment.Search_fragment;
+import com.xianyu.resource.R;
+import com.xianyu.ui.fragment.Car_fragment;
+import com.xianyu.ui.fragment.Dolla_fragment;
+import com.xianyu.ui.fragment.Main_fragment;
+import com.xianyu.ui.fragment.Me_fragment;
+import com.xianyu.ui.fragment.Search_fragment;
 
 public class MainActivity extends FragmentActivity implements OnCheckedChangeListener {
 
@@ -31,7 +32,7 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(com.fish.xianyu.R.layout.activity_main);
         initView();
 
     }
