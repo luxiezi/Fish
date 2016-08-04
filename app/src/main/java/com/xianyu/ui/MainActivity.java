@@ -54,6 +54,7 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
     private void initView() {
 //        ((RadioButton) radioGroup.getChildAt(0)).setChecked(true);
         showFragment(R.id.main_rb_fragment);
+        radiogroup_Fragment= (RadioGroup) findViewById(R.id.radiogroup_fragment);
         radiogroup_Fragment.setOnCheckedChangeListener(this);
     }
 
