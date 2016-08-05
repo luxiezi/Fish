@@ -4,21 +4,37 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
 
-public abstract class BaseActivity extends FragmentActivity{
+/**
+ * activity基类
+ */
+public abstract class BaseActivity extends FragmentActivity
+{
 
-	@Override
-	protected void onCreate(@Nullable Bundle bundle) {
-		// TODO Auto-generated method stub
-		super.onCreate(bundle);
-		setContentView(getContentView());
-		intiView();
-		registerLister();
-	}
+    @Override
+    protected void onCreate(@Nullable Bundle bundle)
+    {
+        super.onCreate(bundle);
 
-	public abstract void registerLister();
+        setContentView(getContentView());
 
-	public abstract void intiView(); 
+        initView();
+        registerLister();
+    }
 
-	public abstract int getContentView();
-	
+    /**
+     * 设置监听事件
+     */
+    public void registerLister()
+    {
+    }
+
+    /**
+     * view的初始化
+     */
+    public void initView()
+    {
+    }
+
+    public abstract int getContentView();
+
 }
