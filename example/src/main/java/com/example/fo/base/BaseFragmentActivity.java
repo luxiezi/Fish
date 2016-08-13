@@ -68,9 +68,9 @@ public abstract class BaseFragmentActivity extends FragmentActivity
     protected abstract int getContentViewId();
 
     @Override
-    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState)
+    protected void onSaveInstanceState(Bundle outState)
     {
-        super.onSaveInstanceState(outState, outPersistentState);
+        super.onSaveInstanceState(outState);
 
         outState.putString(KEY_CURRENT_FRAGMENT_TAG, mCurrnetFragment.getTag());
     }
