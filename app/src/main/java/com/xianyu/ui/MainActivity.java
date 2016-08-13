@@ -1,6 +1,7 @@
 package com.xianyu.ui;
 
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.FrameLayout;
@@ -14,6 +15,9 @@ import com.xianyu.ui.fragment.Dolla_fragment;
 import com.xianyu.ui.fragment.Main_fragment;
 import com.xianyu.ui.fragment.Me_fragment;
 import com.xianyu.ui.fragment.Search_fragment;
+
+import java.io.File;
+import java.io.FileInputStream;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -46,15 +50,17 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        String path= Environment.getExternalStorageDirectory().toString()
+                + File.separator + "er";
+
+
         ButterKnife.bind(this);
         initView();
-
     }
 
     private void initView() {
-//        ((RadioButton) radioGroup.getChildAt(0)).setChecked(true);
         showFragment(R.id.main_rb_fragment);
-        radiogroup_Fragment= (RadioGroup) findViewById(R.id.radiogroup_fragment);
+        main_rb_ragment.setChecked(true);
         radiogroup_Fragment.setOnCheckedChangeListener(this);
     }
 

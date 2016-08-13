@@ -1,6 +1,5 @@
 package com.example.fo.ui.launch;
 
-import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
@@ -23,7 +22,7 @@ public class LaunchActivity extends BaseActivity
     @Override
     public int getContentView()
     {
-        return R.layout.welcome;
+        return R.layout.welcome_activity;
     }
 
     @Override
