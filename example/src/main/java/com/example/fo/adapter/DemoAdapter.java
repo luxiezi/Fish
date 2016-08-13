@@ -28,23 +28,23 @@ public class DemoAdapter extends CommAdapter<RateInfo>
         tv_name.setText(item.getName());
 
         TextView tv_rate =  holder.getItemView(R.id.BuyingRate);
-        tv_name.setText(item.getBuyingRate());
+        tv_rate.setText(item.getBuyingRate());
 
         TextView tv_price =  holder.getItemView(R.id.BuyingPrice);
-        tv_name.setText(item.getBuyingPrice());
+        tv_price.setText(item.getBuyingPrice());
 
         TextView tv_sell_rate =  holder.getItemView(R.id.SellingRate);
-        tv_name.setText(item.getSellingRate());
+        tv_sell_rate.setText(item.getSellingRate());
 
         TextView tv_sell_price =  holder.getItemView(R.id.SellingPrice);
-        tv_name.setText(item.getSellingPrice());
+        tv_sell_price.setText(item.getSellingPrice());
 
 
         TextView tv_discount_price =  holder.getItemView(R.id.DiscountPrice);
-        tv_name.setText(item.getDiscountPrice());
+        tv_discount_price.setText(item.getDiscountPrice());
 
         TextView tv_time =  holder.getItemView(R.id.PublishTime);
-        tv_name.setText(item.getPublishTime());
+        tv_time.setText(item.getPublishTime());
     }
 
     @Override
