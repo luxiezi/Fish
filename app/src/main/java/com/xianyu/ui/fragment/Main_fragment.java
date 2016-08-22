@@ -50,11 +50,6 @@ public class Main_fragment extends Fragment {
     protected Fragment mCurrnetFragment;
     private static final String MAIN_KEY_CURRENT_FRAGMENT_TAG = "key_current_fragment_tag";
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-    }
 
     @Nullable
     @Override
