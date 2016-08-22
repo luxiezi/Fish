@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/me_fragment"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
     <LinearLayout
         android:orientation="vertical"
         android:background="#ff0000"
         android:layout_width="match_parent"
         android:layout_height="200dp">
 
-        <ImageButton
-            android:src="@drawable/news_btn"
-            android:layout_margin="10dp"
-            android:layout_marginRight="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <ImageButton
+                android:src="@drawable/news_btn"
+                android:layout_margin="10dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -32,6 +37,7 @@
                 <TextView
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="5dp"
+                    android:textSize="13sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="18773693790"/>
@@ -43,11 +49,13 @@
                 <TextView
                     android:layout_margin="5dp"
                     android:text="青铜会员"
+                    android:textSize="13sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
                     android:layout_margin="5dp"
                     android:text="立享PLUS特权"
+                    android:textSize="13sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 </LinearLayout>
@@ -60,6 +68,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:text="账号管理"
+                    android:textSize="13sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
@@ -89,54 +98,56 @@
             android:src="@drawable/umeng_fb_arrow_right"/>
     </RelativeLayout>
     <LinearLayout
-        android:background="#00ff00"
+        android:background="#6666"
         android:layout_width="match_parent"
-        android:layout_height="2dp">
+        android:layout_height="1dp">
     </LinearLayout>
     <LinearLayout
+        android:layout_margin="5dp"
         android:orientation="horizontal"
+        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
             <ImageButton
-                android:id="@+id/main_rb_fragment"
-                android:layout_weight="1"
+                android:id="@+id/pay_btn"
                 android:button="@null"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@drawable/pay_btn" />
             <ImageButton
-                android:id="@+id/search_rb_fragment"
-                android:layout_weight="1"
+                android:id="@+id/deliver_btn"
                 android:button="@null"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="@drawable/deliver_btn"/>
             <ImageButton
-                android:id="@+id/dolla_rb_fragment"
-                android:layout_weight="1"
+                android:id="@+id/waited_btn"
                 android:button="@null"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="@drawable/waited_btn"/>
             <ImageButton
-                android:id="@+id/car_rb_fragment"
-                android:layout_weight="1"
+                android:id="@+id/finished_btn"
                 android:button="@null"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="@drawable/finished_btn"/>
             <ImageButton
-                android:id="@+id/me_rb_fragment"
-                android:layout_weight="1"
+                android:id="@+id/customer_btn"
                 android:button="@null"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="@drawable/customer_btn"/>
     </LinearLayout>
     <LinearLayout
-        android:background="#00ff00"
+        android:background="#6666"
         android:layout_width="match_parent"
-        android:layout_height="5dp"/>
+        android:layout_height="3dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -187,9 +198,9 @@
     </LinearLayout>
 
     <LinearLayout
-        android:background="#00ff00"
+        android:background="#6666"
         android:layout_width="match_parent"
-        android:layout_height="5dp"/>
+        android:layout_height="3dp"/>
     <RelativeLayout
         android:id="@+id/setting"
         android:layout_margin="5dp"
@@ -208,9 +219,9 @@
             android:src="@drawable/umeng_fb_arrow_right"/>
     </RelativeLayout>
     <LinearLayout
-        android:background="#00ff00"
+        android:background="#6666"
         android:layout_width="match_parent"
-        android:layout_height="5dp"/>
+        android:layout_height="3dp"/>
     <RelativeLayout
         android:id="@+id/help"
         android:layout_margin="5dp"
@@ -229,9 +240,9 @@
             android:src="@drawable/umeng_fb_arrow_right"/>
     </RelativeLayout>
     <LinearLayout
-        android:background="#00ff00"
+        android:background="#6666"
         android:layout_width="match_parent"
-        android:layout_height="5dp"/>
+        android:layout_height="3dp"/>
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -259,4 +270,5 @@
                 android:layout_height="wrap_content" />
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
