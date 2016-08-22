@@ -4,87 +4,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
         <HorizontalScrollView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <RadioGroup
                 android:id="@+id/main_radiogroup_fragment"
                 android:orientation="horizontal"
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <RadioButton
                     android:id="@+id/select_btn"
-                    android:layout_weight="1"
                     android:button="@null"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:background="@drawable/select_btn_selector" />
                 <RadioButton
                     android:id="@+id/new_btn"
-                    android:layout_weight="1"
                     android:button="@null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/new_btn_selector"/>
                 <RadioButton
                     android:id="@+id/women_btn"
-                    android:layout_weight="1"
                     android:button="@null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/women_btn_selector"/>
                 <RadioButton
                     android:id="@+id/life_btn"
-                    android:layout_weight="1"
                     android:button="@null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/life_btn_selector"/>
                 <RadioButton
                     android:id="@+id/man_btn"
-                    android:layout_weight="1"
                     android:button="@null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/man_btn_selector"/>
                 <RadioButton
                     android:id="@+id/it_btn"
-                    android:layout_weight="1"
                     android:button="@null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/it_btn_selector"/>
                 <RadioButton
                     android:id="@+id/sports_btn"
-                    android:layout_weight="1"
                     android:button="@null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/sports_btn_selector"/>
                 <RadioButton
                     android:id="@+id/makeup_btn"
-                    android:layout_weight="1"
                     android:button="@null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/makeup_btn_selector"/>
                 <RadioButton
                     android:id="@+id/mother_btn"
-                    android:layout_weight="1"
                     android:button="@null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/mother_btn_selector"/>
                 <RadioButton
                     android:id="@+id/shoes_btn"
-                    android:layout_weight="1"
                     android:button="@null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shoes_btn_selector"/>
                 <RadioButton
                     android:id="@+id/recre_btn"
-                    android:layout_weight="1"
                     android:button="@null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

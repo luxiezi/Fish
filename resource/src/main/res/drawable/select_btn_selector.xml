@@ -5,5 +5,5 @@
         android:drawable="@drawable/select_btn_pressed" />
     <item
         android:state_checked="false"
-        android:drawable="@drawable/search_btn_normal"/>
+        android:drawable="@drawable/select_btn_default"/>
 </selector>
