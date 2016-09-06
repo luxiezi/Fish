@@ -106,48 +106,47 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="55dp">
-        <RadioGroup
-            android:id="@+id/radiogroup_fragment"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RadioButton
+
+            <ImageButton
                 android:id="@+id/pay_btn"
                 android:button="@null"
-                android:layout_margin="10dp"
-                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/pay_btn" />
-            <RadioButton
+            <ImageButton
                 android:id="@+id/deliver_btn"
                 android:button="@null"
                 android:layout_margin="8dp"
-                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/deliver_btn"/>
-            <RadioButton
+            <ImageButton
+                android:layout_weight="1"
                 android:id="@+id/waited_btn"
                 android:button="@null"
                 android:layout_margin="8dp"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/waited_btn"/>
-            <RadioButton
+            <ImageButton
+                android:layout_weight="1"
                 android:id="@+id/finished_btn"
                 android:button="@null"
                 android:layout_margin="8dp"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/finished_btn"/>
-            <RadioButton
+            <ImageButton
+                android:layout_weight="1"
                 android:id="@+id/customer_btn"
                 android:button="@null"
                 android:layout_margin="8dp"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/customer_btn"/>
-        </RadioGroup>
 
     </LinearLayout>
     <LinearLayout

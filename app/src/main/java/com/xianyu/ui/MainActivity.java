@@ -17,7 +17,6 @@ import com.xianyu.ui.fragment.Me_fragment;
 import com.xianyu.ui.fragment.Search_fragment;
 
 import java.io.File;
-import java.io.FileInputStream;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -40,6 +39,7 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
     FrameLayout framelayout;
 
     Main_fragment mainTabFragment;
+
     Search_fragment searchTabFragment;
     Me_fragment meTabFragment;
     Dolla_fragment dollaTabFragment;
@@ -69,7 +69,9 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
         switch (index) {
             case R.id.main_rb_fragment:
                 if (mainTabFragment == null) {
+
                     mainTabFragment = new Main_fragment();
+
                     ft.add(R.id.framelayout, mainTabFragment);
                 } else {
                     ft.replace(R.id.framelayout, mainTabFragment);
@@ -103,4 +105,5 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
     public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
         showFragment(checkedId);
     }
+
 }

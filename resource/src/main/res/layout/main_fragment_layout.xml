@@ -7,6 +7,62 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="首页页面"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/dotcontaint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageButton
+            android:id="@+id/qiandao"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/pay_btn" />
+        <ImageButton
+            android:id="@+id/huiyuan"
+            android:button="@null"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/deliver_btn"/>
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/lingqianle"
+            android:button="@null"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/waited_btn"/>
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/fanli"
+            android:button="@null"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/finished_btn"/>
+
+    </LinearLayout>
 
     <include
         android:id="@+id/top_layout"

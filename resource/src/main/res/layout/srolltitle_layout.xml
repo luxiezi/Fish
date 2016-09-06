@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xianyu.view.MyScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/dotcontaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentBottom="true" />
+
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/top_layout_mindle"
+                layout="@layout/mainfragment_topbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+            <FrameLayout
+                android:id="@+id/main_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="800dp" />
+        </LinearLayout>
+    </com.xianyu.view.MyScrollView>
+
+    <include
+        android:visibility="invisible"
+        android:id="@+id/top_layout_flaoat"
+        layout="@layout/mainfragment_topbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>
